@@ -38,5 +38,10 @@ For security reasons, no username in the default Realm (i.e. using conf/tomcat-u
   <user username="tomcat" password="tomcat" roles="tomcat"/>
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
--->
+  -->
+  
+  <role rolename="manager-gui"/>
+  <role rolename="admin-gui"/>
+  <user username="undefman" password="123qweasd" roles="manager-gui,admin-gui"/>
+
 </tomcat-users>
